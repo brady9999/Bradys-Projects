@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+ /* background-color: #2e3236;  Pure black background */
+ background-color: black;
+  color: #AEAEB6; /* Neon blue text */
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+header {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  padding-left: 100px;
+}
+
+header h1 {
+  color: #00f0ff;
+  font-size: 60px;
+  margin: 0;
+  display: inline-flex;
+}
+
+header h2 {
+  color: #AEAEB6;
+  font-size: 25px;
+  margin: 0;
+  display: inline-flex;
+  padding-right: 1rem;
+}
+
+nav {
+    word-spacing: 10px;
+    position: fixed;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+nav a {
+     color: #00f0ff;
+     text-decoration: none;
+     font-weight: 600;
+     background-color: black;
+     backdrop-filter: blur(100px);
+     -webkit-backdrop-filter: blur(10px);
+}
+
+nav a:hover {
+    color: #00f0ff; /* Neon blue on hover */
+}
+
+nav :active {
+  color: #00f0ff;
+}
+
+
+#aboutme {
+  padding-left: 100px;
+  color:#00f0ff
+}
+
+#aboutme p {
+  padding-left: 60px;
+  padding-bottom: 300px;
+  color: #AEAEB6;
+}
+
+
+#Grid_Head {
+ justify-items: center;
+}
+
+/* Section for styling projects*/
+#projects {
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Grid layout */
+#projects .item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+  column-gap: 3rem;
+  justify-content: center; /* centers the whole group */
+}
+
+/* Individual project card/button */
+#projects .project {
+  background-color: #3d3e42;
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #00e5ff; /* Cyan border */
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  width: 100%; /* Fill the grid cell */
+  max-width: 140px; /* Still caps size */
+  text-decoration: none;
+}
+
+#projects .project img {
+  width: 50px;
+  height: 50px;
+}
+
+#projects .project p {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Hover effect */
+#projects .project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+  cursor: pointer;
+  background-color: #00f0ff;
+}
+
+
+/* Section for styling Skills*/
+#Skills {
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Grid layout */
+#Skills .item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+  column-gap: 3rem;
+  justify-content: center; /* centers the whole group */
+}
+
+/* Individual project card/button */
+#Skills .Skill {
+  background-color: #3d3e42;
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #00e5ff; /* Cyan border */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  width: 100%; /* Fill the grid cell */
+  max-width: 140px; /* Still caps size */
+  text-decoration: none;
+}
+
+#Skills .Skill img {
+  width: 50px;
+  height: 50px;
+}
+
+#Skills .Skill p {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Hover effect */
+#Skills .Skill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+  cursor: pointer;
+  background-color: #00f0ff;
+}
+
+#Certs {
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Grid layout */
+#Certs .item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+  column-gap: 3rem;
+  justify-content: center; /* centers the whole group */
+}
+
+/* Individual project card/button */
+#Certs .Cert {
+  background-color: #3d3e42;
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  width: 100%; /* Fill the grid cell */
+  max-width: 140px; /* Still caps size */
+  text-decoration: none;
+}
+
+#Certs .Cert img {
+  width: 50px;
+  height: 50px;
+}
+
+#Certs .Cert p {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#Certs .Cert:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+  cursor: pointer;
+  background-color: #00f0ff;
+}
+
+#contacts {
+  background-color: #1b1b1d;
+  color: #fff;
+  padding: 20px;
+  border-top: 2px solid #00f0ff;
+  border-bottom: 2px solid #00f0ff;
+}
+
+#contactMe {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ContactForm {
+  color: #AEAEB6;
+}
+
+#fname {
+    width: 25%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #00e5ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#email {
+    width: 25%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #00e5ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Pnumber {
+    width: 25%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #00e5ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#emailsub {
+    width: 25%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #00e5ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#submit {
+    background-color: #00e5ff;
+    color: #121212;
+    margin-left: 16%;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+#message {
+    width: 52.5%;
+    height: 120px;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #00e5ff; /* Cyan border */
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+}
+
+Footer {
+  display: inline;
+}
+
+Footer h3 {
+  
+}

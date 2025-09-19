@@ -29,6 +29,11 @@ const artNameInput = document.getElementById('artName');
 const confirmSave  = document.getElementById('confirmSave');
 const cancelSave   = document.getElementById('cancelSave');
 
+// resize
+const resizer = document.querySelector('.resizer');
+const container = document.querySelector('.resizable-container');
+
+
 // state
 let erasing   = false;
 let isDrawing = false;
@@ -261,3 +266,32 @@ function pickColor(x, y) {
 function rgbToHex(r, g, b) {
     return "#" + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
 }
+
+let isResizing = false;
+
+resizer.addEventListener('mousedown', (e) => {
+    isResizing = true;
+    document.body.style.cursor = 'se-resize';
+});
+
+window.addEventListener('mousemove', (e) => {
+    if (!isResizing) return;
+
+    const rect = container.getBoundingClientRect();
+    const newWidth = Math.max(100, e.clientX - rect.left);
+    const newHeight = Math.max(100, e.clientY - rect.top);
+
+    // Preserve artwork
+    const temp = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+    canvas.width = newWidth;
+    canvas.height = newHeight;
+
+    ctx.putImageData(temp, 0, 0);
+});
+
+window.addEventListener('mouseup', () => {
+    isResizing = false;
+    document.body.style.cursor = 'default';
+});
+
