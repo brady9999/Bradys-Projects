@@ -1,7 +1,7 @@
 body {
   margin: 0;
- /* background-color: #2e3236;  Pure black background */
- background-color: black;
+  /*background-color: black; */
+   background-image: linear-gradient(to right, #000000, #006d75);
   color: #AEAEB6; /* Neon blue text */
   font-family: 'Orbitron', sans-serif;
 }
@@ -34,7 +34,6 @@ nav {
     position: fixed;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: black;
     width: 100%;
     text-align: center;
 }
@@ -43,7 +42,6 @@ nav a {
      color: #00f0ff;
      text-decoration: none;
      font-weight: 600;
-     background-color: black;
      backdrop-filter: blur(100px);
      -webkit-backdrop-filter: blur(10px);
 }
@@ -72,6 +70,8 @@ nav :active {
 #Grid_Head {
  justify-items: center;
  color: #00f0ff;
+ background-color: #1b1b1d;
+ border-top: 2px solid #00e5ff;
 }
 
 /* Section for styling projects*/
@@ -79,6 +79,8 @@ nav :active {
   color: #fff;
   padding: 3rem 1rem;
   text-align: center;
+  background-color: #1b1b1d;
+
 }
 
 /* Grid layout */
